@@ -18,13 +18,11 @@ import java.util.Optional;
 public class EmployeeController {
 
     @Autowired
-
     private EmployeeRepository employeeRepository;
 
     // Get all employees
 
     @GetMapping
-
     public ResponseEntity<List<Employee>> getAllEmployees() {
 
         List<Employee> employees = employeeRepository.findAll();
